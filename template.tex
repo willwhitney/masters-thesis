@@ -1,0 +1,273 @@
+% -*- Mode:TeX -*-
+
+%% IMPORTANT: The official thesis specifications are available at:
+%%            http://libraries.mit.edu/archives/thesis-specs/
+%%
+%%            Please verify your thesis' formatting and copyright
+%%            assignment before submission.  If you notice any
+%%            discrepancies between these templates and the
+%%            MIT Libraries' specs, please let us know
+%%            by e-mailing thesis@mit.edu
+
+%% The documentclass options along with the pagestyle can be used to generate
+%% a technical report, a draft copy, or a regular thesis.  You may need to
+%% re-specify the pagestyle after you \include  cover.tex.  For more
+%% information, see the first few lines of mitthesis.cls.
+
+%\documentclass[12pt,vi,twoside]{mitthesis}
+%%
+%%  If you want your thesis copyright to you instead of MIT, use the
+%%  ``vi'' option, as above.
+%%
+%\documentclass[12pt,twoside,leftblank]{mitthesis}
+%%
+%% If you want blank pages before new chapters to be labelled ``This
+%% Page Intentionally Left Blank'', use the ``leftblank'' option, as
+%% above.
+
+\documentclass[12pt,twoside]{mitthesis}
+\usepackage{lgrind}
+%% These have been added at the request of the MIT Libraries, because
+%% some PDF conversions mess up the ligatures.  -LB, 1/22/2014
+\usepackage{cmap}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+% \usepackage[utf8x]{inputenc}
+\usepackage{amssymb,amsmath}
+\usepackage{inconsolata}
+
+$if(natbib)$
+    \usepackage{natbib}
+    \bibliographystyle{$if(biblio-style)$$biblio-style$$else$plainnat$endif$}
+$endif$
+$if(biblatex)$
+    \usepackage{biblatex}
+$for(bibliography)$
+    \addbibresource{$bibliography$}
+$endfor$
+$endif$
+$if(highlighting-macros)$
+    $highlighting-macros$
+$endif$
+$if(verbatim-in-note)$
+    \usepackage{fancyvrb}
+    \VerbatimFootnotes
+$endif$
+$if(tables)$
+    \usepackage{longtable,booktabs}
+$endif$
+$if(graphics)$
+    \usepackage{graphicx,grffile}
+    \makeatletter
+    \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+    \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+    \makeatother
+    % Scale images if necessary, so that they will not overflow the page
+    % margins by default, and it is still possible to overwrite the defaults
+    % using explicit options in \includegraphics[width, height, ...]{}
+    \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+$endif$
+$if(links-as-notes)$
+    % Make links footnotes instead of hotlinks:
+    \renewcommand{\href}[2]{#2\footnote{\url{#1}}}
+$endif$
+$if(strikeout)$
+    \usepackage[normalem]{ulem}
+    % avoid problems with \sout in headers with hyperref:
+    \pdfstringdefDisableCommands{\renewcommand{\sout}{}}
+$endif$
+
+\usepackage[unicode=true]{hyperref}
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={$author-meta$},
+            pdftitle={$title-meta$},
+            colorlinks=true,
+            citecolor=$if(citecolor)$$citecolor$$else$blue$endif$,
+            urlcolor=$if(urlcolor)$$urlcolor$$else$blue$endif$,
+            linkcolor=$if(linkcolor)$$linkcolor$$else$black$endif$,
+            pdfborder={0 0 0}}
+\urlstyle{same}
+
+$if(verbatim-in-note)$
+    \VerbatimFootnotes % allows verbatim text in footnotes
+$endif$
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\usepackage{upquote}
+
+\usepackage{titlesec}
+\titleformat{\chapter}{\normalfont\huge\bfseries}{\thechapter.}{20pt}{\huge\bf}
+% \titleclass{\section}{top}
+% \newcommand\sectionbreak{\clearpage}
+
+\pagestyle{plain}
+
+%% This bit allows you to either specify only the files which you wish to
+%% process, or `all' to process all files which you \include.
+%% Krishna Sethuraman (1990).
+
+% \typein [\files]{Enter file names to process, (chap1,chap2 ...), or `all' to
+% process all files:}
+% \def\all{all}
+% \ifx\files\all \typeout{Including all files.} \else \typeout{Including only \files.} \includeonly{\files} \fi
+
+\begin{document}
+
+
+% NOTE:
+% These templates make an effort to conform to the MIT Thesis specifications,
+% however the specifications can change.  We recommend that you verify the
+% layout of your title page with your thesis advisor and/or the MIT
+% Libraries before printing your final copy.
+\title{$title$}
+
+\author{$author$}
+\prevdegrees{S.B., Massachusetts Institute of Technology (2013)}
+% If you wish to list your previous degrees on the cover page, use the
+% previous degrees command:
+%       \prevdegrees{A.A., Harvard University (1985)}
+% You can use the \\ command to list multiple previous degrees
+%       \prevdegrees{B.S., University of California (1978) \\
+%                    S.M., Massachusetts Institute of Technology (1981)}
+\department{Department of Electrical Engineering and Computer Science}
+
+% If the thesis is for two degrees simultaneously, list them both
+% separated by \and like this:
+% \degree{Doctor of Philosophy \and Master of Science}
+\degree{Master of Engineering in Computer Science and Engineering}
+
+% As of the 2007-08 academic year, valid degree months are September,
+% February, or June.  The default is June.
+\degreemonth{February}
+\degreeyear{2016}
+\thesisdate{January 29, 2016}
+
+%% By default, the thesis will be copyrighted to MIT.  If you need to copyright
+%% the thesis to yourself, just specify the `vi' documentclass option.  If for
+%% some reason you want to exactly specify the copyright notice text, you can
+%% use the \copyrightnoticetext command.
+%\copyrightnoticetext{\copyright IBM, 1990.  Do not open till Xmas.}
+
+% If there is more than one supervisor, use the \supervisor command
+% once for each.
+\supervisor{Joshua B. Tenenbaum}{Professor}
+
+% This is the department committee chairman, not the thesis committee
+% chairman.  You should replace this with your Department's Committee
+% Chairman.
+\chairman{Christopher Terman}{Chairman, Masters of Engineering Thesis Committee}
+
+% Make the titlepage based on the above information.  If you need
+% something special and can't use the standard form, you can specify
+% the exact text of the titlepage yourself.  Put it in a titlepage
+% environment and leave blank lines where you want vertical space.
+% The spaces will be adjusted to fill the entire page.  The dotted
+% lines for the signatures are made with the \signature command.
+\maketitle
+
+% The abstractpage environment sets up everything on the page except
+% the text itself.  The title and other header material are put at the
+% top of the page, and the supervisors are listed at the bottom.  A
+% new page is begun both before and after.  Of course, an abstract may
+% be more than one page itself.  If you need more control over the
+% format of the page, you can use the abstract environment, which puts
+% the word "Abstract" at the beginning and single spaces its text.
+
+%% You can either \input (*not* \include) your abstract file, or you can put
+%% the text of the abstract directly between the \begin{abstractpage} and
+%% \end{abstractpage} commands.
+
+% First copy: start a new page, and save the page number.
+\cleardoublepage
+% Uncomment the next line if you do NOT want a page number on your
+% abstract and acknowledgments pages.
+% \pagestyle{empty}
+\setcounter{savepage}{\thepage}
+\begin{abstractpage}
+$abstract$
+\end{abstractpage}
+
+% Additional copy: start a new page, and reset the page number.  This way,
+% the second copy of the abstract is not counted as separate pages.
+% Uncomment the next 6 lines if you need two copies of the abstract
+% page.
+% \setcounter{page}{\thesavepage}
+% \begin{abstractpage}
+% \input{abstract}
+% \end{abstractpage}
+
+\cleardoublepage
+
+
+
+\section*{Acknowledgments}
+\input{acknowledgements}
+%
+% This is the acknowledgements section.  You should replace this with your
+% own acknowledgements.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% -*-latex-*-
+
+$for(include-before)$
+    $include-before$
+    \pagestyle{plain}
+$endfor$
+
+$if(toc)$
+    {
+    % \hypersetup{linkcolor=black}
+    \setcounter{tocdepth}{$toc-depth$}
+    \tableofcontents
+    }
+$endif$
+$if(lot)$
+    \listoftables
+$endif$
+$if(lof)$
+    \listoffigures
+$endif$
+% Some departments (e.g. 5) require an additional signature page.  See
+% signature.tex for more information and uncomment the following line if
+% applicable.
+% \include{signature}
+
+$body$
+
+\begin{singlespace}
+
+\end{singlespace}
+$if(natbib)$
+    $if(bibliography)$
+        $if(biblio-title)$
+            $if(book-class)$
+                \renewcommand\bibname{$biblio-title$}
+            $else$
+                \renewcommand\refname{$biblio-title$}
+            $endif$
+        $endif$
+        \bibliography{$for(bibliography)$$bibliography$$sep$,$endfor$}
+
+    $endif$
+$endif$
+$if(biblatex)$
+    \printbibliography$if(biblio-title)$[title=$biblio-title$]$endif$
+
+    \bibliographystyle{plain}
+    \end{singlespace}
+$endif$
+$for(include-after)$
+    $include-after$
+$endfor$
+
+% \include{contents}
+% \include{chap1}
+% \include{chap2}
+% \appendix
+% \include{appa}
+% \include{appb}
+% \include{biblio}
+\end{document}

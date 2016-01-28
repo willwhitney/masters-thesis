@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:gadfly="http://www.gadflyjl.org/ns"
+     version="1.2"
+     width="101.6mm" height="76.2mm" viewBox="0 0 101.6 76.2"
+     stroke="none"
+     fill="#000000"
+     stroke-width="0.3"
+     font-size="3.88"
+>
+<g class="plotroot xscalable yscalable" id="fig-600a1d9cd04847bc9b49b88f5fcf7492-element-1">
+  <g font-size="3.88" font-family="'PT Sans','Helvetica Neue','Helvetica',sans-serif" fill="#564A55" stroke="#000000" stroke-opacity="0.000" id="fig-600a1d9cd04847bc9b49b88f5fcf7492-element-2">
+    <text x="58.45" y="64.59" text-anchor="middle" dy="0.6em">Example (x1000)</text>
+  </g>
+  <g class="guide xlabels" font-size="2.82" font-family="'PT Sans Caption','Helvetica Neue','Helvetica',sans-serif" fill="#6C606B" id="fig-600a1d9cd04847bc9b49b88f5fcf7492-element-3">
+    <text x="22.31" y="57.91" text-anchor="middle" dy="0.6em">0</text>
+    <text x="36.76" y="57.91" text-anchor="middle" dy="0.6em">50</text>
+    <text x="51.22" y="57.91" text-anchor="middle" dy="0.6em">100</text>
+    <text x="65.68" y="57.91" text-anchor="middle" dy="0.6em">150</text>
+    <text x="80.14" y="57.91" text-anchor="middle" dy="0.6em">200</text>
+    <text x="94.6" y="57.91" text-anchor="middle" dy="0.6em">250</text>
+  </g>
+  <g clip-path="url(#fig-600a1d9cd04847bc9b49b88f5fcf7492-element-5)" id="fig-600a1d9cd04847bc9b49b88f5fcf7492-element-4">
+    <g pointer-events="visible" opacity="1" fill="#000000" fill-opacity="0.000" stroke="#000000" stroke-opacity="0.000" class="guide background" id="fig-600a1d9cd04847bc9b49b88f5fcf7492-element-6">
+      <rect x="20.31" y="5" width="76.29" height="51.91"/>
+    </g>
+    <g class="guide ygridlines xfixed" stroke-dasharray="0.5,0.5" stroke-width="0.2" stroke="#D0D0E0" id="fig-600a1d9cd04847bc9b49b88f5fcf7492-element-7">
+      <path fill="none" d="M20.31,54.91 L 96.6 54.91"/>
+      <path fill="none" d="M20.31,45.33 L 96.6 45.33"/>
+      <path fill="none" d="M20.31,35.75 L 96.6 35.75"/>
+      <path fill="none" d="M20.31,26.17 L 96.6 26.17"/>
+      <path fill="none" d="M20.31,16.58 L 96.6 16.58"/>
+      <path fill="none" d="M20.31,7 L 96.6 7"/>
+    </g>
+    <g class="guide xgridlines yfixed" stroke-dasharray="0.5,0.5" stroke-width="0.2" stroke="#D0D0E0" id="fig-600a1d9cd04847bc9b49b88f5fcf7492-element-8">
+      <path fill="none" d="M22.31,5 L 22.31 56.91"/>
+      <path fill="none" d="M36.76,5 L 36.76 56.91"/>
+      <path fill="none" d="M51.22,5 L 51.22 56.91"/>
+      <path fill="none" d="M65.68,5 L 65.68 56.91"/>
+      <path fill="none" d="M80.14,5 L 80.14 56.91"/>
+      <path fill="none" d="M94.6,5 L 94.6 56.91"/>
+    </g>
+    <g class="plotpanel" id="fig-600a1d9cd04847bc9b49b88f5fcf7492-element-9">
+      <g stroke-width="0.3" fill="#000000" fill-opacity="0.000" class="geometry" stroke-dasharray="none" stroke="#00BFFF" id="fig-600a1d9cd04847bc9b49b88f5fcf7492-element-10">
+        <path fill="none" d="M22.88,9.94 L 23.46 15.18 24.04 21.55 24.62 26.4 25.2 28.5 25.78 29.56 26.35 32.34 26.93 35.29 27.51 35.93 28.09 32.8 28.67 33.49 29.25 36.7 29.82 44.5 30.4 34.51 30.98 46.72 31.56 47.8 32.14 42.8 32.72 50.99 33.29 49.59 33.87 48.96 34.45 48.38 35.03 48.2 35.61 49.11 36.19 45.69 36.76 50.6 37.34 48.33 37.92 52.19 38.5 50.16 39.08 50.96 39.66 50.34 40.23 51.63 40.81 51.49 41.39 50.7 41.97 50.8 42.55 48.63 43.13 52.78 43.7 52.31 44.28 51.08 44.86 52.91 45.44 53.45 46.02 53.37 46.6 54.11 47.17 51.28 47.75 54.02 48.33 53.54 48.91 54.39 49.49 51.69 50.07 53.92 50.64 54.21 51.22 53.18 51.8 53.04 52.38 54.44 52.96 54.5 53.54 54.22 54.11 54.29 54.69 54.38 55.27 54.01 55.85 54.35 56.43 53.83 57.01 53.99 57.58 54.05 58.16 54.26 58.74 54.28 59.32 54.48 59.9 54.72 60.48 54.7 61.06 54.3 61.63 54.71 62.21 54.7 62.79 54.1 63.37 54.66 63.95 54.18 64.53 54.79 65.1 54.77 65.68 54.76 66.26 54.77 66.84 54.51 67.42 54.79 68 54.65 68.57 54.29 69.15 54.76 69.73 54.82 70.31 54.58 70.89 54.8 71.47 54.75 72.04 54.8 72.62 54.7 73.2 54.79 73.78 54.86 74.36 54.72 74.94 54.81 75.51 54.82 76.09 54.86 76.67 54.87 77.25 54.87 77.83 54.86 78.41 54.89 78.98 54.82 79.56 54.88 80.14 54.87 80.72 54.84 81.3 54.85 81.88 54.84 82.45 54.83 83.03 54.81 83.61 54.84 84.19 54.85 84.77 54.82 85.35 54.83 85.92 54.82 86.5 54.81 87.08 54.8 87.66 54.81 88.24 54.85 88.82 54.82 89.39 54.82 89.97 54.81 90.55 54.81 91.13 54.83 91.71 54.82 92.29 54.81"/>
+      </g>
+    </g>
+  </g>
+  <g class="guide ylabels" font-size="2.82" font-family="'PT Sans Caption','Helvetica Neue','Helvetica',sans-serif" fill="#6C606B" id="fig-600a1d9cd04847bc9b49b88f5fcf7492-element-11">
+    <text x="19.3" y="54.91" text-anchor="end" dy="0.35em">0.00</text>
+    <text x="19.3" y="45.33" text-anchor="end" dy="0.35em">0.01</text>
+    <text x="19.3" y="35.75" text-anchor="end" dy="0.35em">0.02</text>
+    <text x="19.3" y="26.17" text-anchor="end" dy="0.35em">0.03</text>
+    <text x="19.3" y="16.58" text-anchor="end" dy="0.35em">0.04</text>
+    <text x="19.3" y="7" text-anchor="end" dy="0.35em">0.05</text>
+  </g>
+  <g font-size="3.88" font-family="'PT Sans','Helvetica Neue','Helvetica',sans-serif" fill="#564A55" stroke="#000000" stroke-opacity="0.000" id="fig-600a1d9cd04847bc9b49b88f5fcf7492-element-12">
+    <text x="8.81" y="28.96" text-anchor="middle" dy="0.35em" transform="rotate(-90, 8.81, 30.96)">Validation loss</text>
+  </g>
+</g>
+<defs>
+<clipPath id="fig-600a1d9cd04847bc9b49b88f5fcf7492-element-5">
+  <path d="M20.31,5 L 96.6 5 96.6 56.91 20.31 56.91" />
+</clipPath
+></defs>
+</svg>
