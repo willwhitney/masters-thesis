@@ -20,7 +20,7 @@ The next chapter discusses various criteria for assessing the quality of a repre
 
 In the following two chapters, I use these criteria to discuss representations in the domains of graphics and computer programs. Each chapter begins with an overview of the problems in the field and related work, then moves on to a description of the specific problem I address, my methods, and the results.
 
-In the final chapter I discuss the significance of this work to the field, future research directions, and the philosophy of model design in the deep learning era.
+In the final chapter I discuss the significance of this work to the field and promising directions for further research.
 
 
 # Desiderata for representations

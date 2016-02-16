@@ -7,12 +7,11 @@ pdf:
 		graphics/related.md \
 		graphics/model.md \
 		graphics/experiments.md \
-		graphics/discussion.md \
 		computation/introduction.md \
 		computation/related.md \
 		computation/model.md \
 		computation/experiments.md \
-		computation/conclusion.md \
+		conclusion.md \
 		references.md -s \
 		--filter pandoc-crossref \
 		--filter pandoc-citeproc \
